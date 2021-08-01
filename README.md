@@ -4,6 +4,8 @@
 
 ![Demo with minimal setup](./assets/demo-minimal.gif)
 
+> Ref: [/example-minimal.sh] file used in above example
+
 ```bash
 #!/usr/bin/env bash
 
