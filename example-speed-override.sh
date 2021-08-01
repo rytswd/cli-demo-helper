@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Overrides the type speed to 3000 char per min
-export type_speed="3000"
+export demo_helper_type_speed="3000"
 
 # shellcheck source=./demo-helper.sh
 source "$(dirname "$0")/demo-helper.sh"

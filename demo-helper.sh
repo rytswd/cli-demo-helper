@@ -34,11 +34,11 @@ readonly blue=$__blue
 readonly yellow=$__yellow
 
 # Speed
-type_speed=${type_speed:="1200"} # In characters per min notation
-interval="100"                   # In ms
+type_speed=${demo_helper_type_speed:="1200"} # In characters per min notation
+interval="100"                               # In ms
 
 # Prompt
-prompt=${prompt:="$yellow$ $reset"}
+prompt=${demo_helper_prompt:="$yellow$ $reset"}
 
 ###---- ⬇️ EXTRA CONFIGURATION ⬇️ ------------------------------------------###
 
