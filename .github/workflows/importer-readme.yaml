@@ -1,0 +1,27 @@
+name: Run Importer for README.md
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  importer:
+    name: Run Importer Generate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Install Importer
+        run: brew install upsidr/tap/importer
+
+      - name: Run Importer against README.md
+        run: importer update README.md
+
+      - name: Check if README.md has any change compared to the branch
+        run: |
+          git status --short
+          git diff-index --quiet HEAD
