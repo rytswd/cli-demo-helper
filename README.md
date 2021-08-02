@@ -24,25 +24,20 @@ comment "End of demo!"
 
 ## ✨ Usage
 
-You would simply need to `source` the `demo-helper.sh` file, and use provided functions.
+You need to `source` the `demo-helper.sh` file, and use provided functions.
 
-The simplest approach is to copy the file to your local, by running something like below.
+The simplest approach is to copy the `demo-helper.sh` file to your local, by running something like below.
 
 ```bash
-{
-    # Copy shell script to your local environment
-    curl -sSL https://raw.githubusercontent.com/rytswd/cli-demo-helper/main/demo-helper.sh \
-        > demo-helper.sh
+curl -sSL https://raw.githubusercontent.com/rytswd/cli-demo-helper/main/demo-helper.sh \
+    > demo-helper.sh
+```
 
-    # Provided that you are copying the demo-helper.sh in the same directory
-    # as your shell script, you can simply add this towards the top of your
-    # script.
-    echo '
-Copy below in your script
+With that, you can have the following snippet in your shell script to set up functions.
 
+```bash
 # shellcheck source=./demo-helper.sh
 source "$(dirname "$0")/demo-helper.sh"'
-}
 ```
 
 ## 🎮 Functions
