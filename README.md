@@ -22,6 +22,28 @@ comment_b "No extra tool needed."
 comment "End of demo!"
 ```
 
+## ✨ Usage
+
+You would simply need to `source` the `demo-helper.sh` file, and use provided functions.
+
+The simplest approach is to copy the file to your local, by running something like below.
+
+```bash
+{
+    # Copy shell script to your local environment
+    curl -sSL https://raw.githubusercontent.com/rytswd/cli-demo-helper/main/demo-helper.sh > demo-helper.sh
+
+    # Provided that you are copying the demo-helper.sh in the same directory
+    # as your shell script, you can simply add this towards the top of your
+    # script.
+    echo '
+Copy below in your script
+
+# shellcheck source=./demo-helper.sh
+source "$(dirname "$0")/demo-helper.sh"'
+}
+```
+
 ## 🎮 Functions
 
 <!-- == imptr: function-list / begin from: ./docs/functions.md#[list] == -->
