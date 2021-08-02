@@ -1,10 +1,18 @@
 #!/usr/bin/env bash
 
+# 📌 Original file at:
+#    https://github.com/rytswd/cli-demo-helper
+
 ###---- ⬇️ HOW TO USE ⬇️ ---------------------------------------------------###
 #
+#  Simply source this file to import functions, and use them like:
 #
+#      comment "This is a comment! About to start command..."
+#      execute "ls -la"
 #
-#
+#  You can configure speed, prompt, etc.
+#  For more information, please check out:
+#      https://github.com/rytswd/cli-demo-helper
 #
 
 ###---- ⬇️ SETUP ⬇️ --------------------------------------------------------###
