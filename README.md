@@ -31,7 +31,8 @@ The simplest approach is to copy the file to your local, by running something li
 ```bash
 {
     # Copy shell script to your local environment
-    curl -sSL https://raw.githubusercontent.com/rytswd/cli-demo-helper/main/demo-helper.sh > demo-helper.sh
+    curl -sSL https://raw.githubusercontent.com/rytswd/cli-demo-helper/main/demo-helper.sh \
+        > demo-helper.sh
 
     # Provided that you are copying the demo-helper.sh in the same directory
     # as your shell script, you can simply add this towards the top of your
