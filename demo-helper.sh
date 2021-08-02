@@ -65,6 +65,7 @@ function write_prompt() {
 ###---- ⬇️ MAIN FUNCTIONS ⬇️ -----------------------------------------------###
 function clear_terminal() {
     clear
+    write_prompt
 }
 
 # comment writes hash and then any content as comment
