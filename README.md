@@ -37,7 +37,7 @@ With that, you can have the following snippet in your shell script to set up fun
 
 ```bash
 # shellcheck source=./demo-helper.sh
-source "$(dirname "$0")/demo-helper.sh"'
+source "$(dirname "$0")/demo-helper.sh"
 ```
 
 ## 🎮 Functions
